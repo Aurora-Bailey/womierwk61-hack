@@ -1,0 +1,23 @@
+# Build artifacts
+.build/
+*.o
+*.elf
+*.hex
+DerivedData/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Large captures (keep notes, not multi-MB pcaps) — un-ignore specific ones if needed
+captures/*.pcapng
+
+# Keep stock firmware dump tracked, but ignore other stray bins
+firmware/**/*.bin
+!firmware/stock/k61-stock.bin
